@@ -1,3 +1,4 @@
+package Problems;
 // This is the problem 3 of the Programming Fundamentals class
 import java.util.Scanner;
 

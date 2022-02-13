@@ -4,7 +4,7 @@ import java.util.Scanner;
 import Utils.Print;
 
 public class CircleOrTriangle {
-		
+	
 	public static void main(String[] args) {
 		Print print = new Print();
 		Scanner in = new Scanner(System.in);

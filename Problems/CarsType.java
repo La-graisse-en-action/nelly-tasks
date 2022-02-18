@@ -32,5 +32,7 @@ public class CarsType {
 		} else {
 			print.pr("Algo salio mal");
 		}
+		
+		in.close();
 	}
 }

@@ -8,7 +8,7 @@ public class IsPalindrome {
 		Scanner in = new Scanner(System.in);
 		Print print = new Print();
 		
-		print.pr("Ingresa valor para saber si es palindromo: ");
+		print.pr("Ingresa valor para saber si es palindromo: ", null);
 		int value = in.nextInt();
 		
 		if (value >= 100 && value < 1000) {
@@ -16,12 +16,12 @@ public class IsPalindrome {
 			int lastChar = value % 10;
 			
 			if (firstChar == lastChar) {
-				print.pr(value + " es palindromo");
+				print.pr(value + " es palindromo", null);
 			} else {
-				print.pr(value + " no es palindromo");
+				print.pr(value + " no es palindromo", null);
 			}
 		} else {
-			print.pr("El valor debe ser de 3 cifras");
+			print.pr("El valor debe ser de 3 cifras", null);
 		}
 		
 		in.close();

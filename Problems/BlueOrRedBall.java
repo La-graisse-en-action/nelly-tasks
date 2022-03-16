@@ -8,12 +8,12 @@ public class BlueOrRedBall {
 		Scanner in = new Scanner(System.in);
 		Print print = new Print();
 		
-		print.pr("Ingresa pelota seleccionada (azul o roja):");
+		print.pr("Ingresa pelota seleccionada (azul o roja):", null);
 		String ball = in.nextLine();
 		boolean hasValidBall = validBall(ball);
 		
 		if (hasValidBall) {
-			print.pr("Ingresa total de compra:");
+			print.pr("Ingresa total de compra:", null);
 			double totalPurchase = in.nextInt();
 		
 			print.pr("Ingresa la cantidad de articulos:");

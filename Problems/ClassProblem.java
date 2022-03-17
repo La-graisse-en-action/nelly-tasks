@@ -10,15 +10,13 @@ public class ClassProblem {
 		int minutes = in.nextInt();
 		
 		// int l = 0;
-		long bacteries = 0;
+		long bacteries = 1;
 		
 		print("Tiempo (minutos): " + minutes);
 		print("Tiempo" + "\t" + "Bacterias");
 		/*
 		while(l <= minutes) {
-			if(bacteries == 0) bacteries = 1;
-			else bacteries *= 2;
-			
+			bacteries *= 2;
 			print(l + "\t" + bacteries);
 			l++;
 		}
@@ -26,18 +24,14 @@ public class ClassProblem {
 		
 		/*
 		do {
-			if(bacteries == 0) bacteries = 1;
-			else bacteries *= 2;
+			bacteries *= 2;
 			print(l + "\t" + bacteries);
 			l++;
 		} while(l <= minutes);
 		*/
 		
 		/*
-		for (int l = 0; l <= minutes; l++) {
-		 
-			if(bacteries == 0) bacteries = 1;
-			else bacteries *= 2;
+		for (int l = 0; l <= minutes; l++, bacteries *= 2) {
 			print(l + "\t" + bacteries);
 		}
 		*/

@@ -1,7 +1,5 @@
 package NellyTasks;
-
 import java.util.Scanner;
-
 /*
  * Alumnos:
  * - Alvarez Manriquez Luis Fernando
@@ -13,21 +11,16 @@ import java.util.Scanner;
  * Debe validarse y mostrar mensaje de error en el caso de que alguno de los datos de entrada sea negativo o cero. 
  * 
 */
-
 public class Excercise4 {
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		
+		Scanner in = new Scanner(System.in);	
 		print("INGRESA FIGURA:");
 		String fig = in.next();
-		
 		if(fig.equals("triangulo")) {
 			print("INGRESA BASE:");
 			double base = in.nextDouble();
-			
 			print("INGRESA ALTURA");
 			double height = in.nextDouble();
-			
 			if (base != 0 && height != 0) {
 				double area = (double) Math.pow(((base * height) / 2), 1);
 				print("EL AREA DEL TRIANGULO ES: " + area);
@@ -35,7 +28,6 @@ public class Excercise4 {
 		} else if(fig.equals("circulo")) {
 			print("INGRESA VALOR DEL RADIO:");
 			double r = (double) in.nextDouble();
-			
 			if(r != 0) {
 				int area = (int) (Math.PI * (r * r));
 				print("EL AREA DEL CIRCULO ES: " + area);

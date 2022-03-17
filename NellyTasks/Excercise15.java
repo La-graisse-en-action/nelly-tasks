@@ -1,7 +1,5 @@
 package NellyTasks;
-
 import java.util.Scanner;
-
 /*
  * Alumnos:
  *	- Alvarez Manriquez Luis Fernando
@@ -13,14 +11,11 @@ import java.util.Scanner;
  * El dato de entrada debe ser un valor entero y si sale del rango de 1 a 7 mostrar un mensaje de error.
  * 
  */
-
 public class Excercise15 {
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		
+		Scanner in = new Scanner(System.in);	
 		System.out.println("Ingresa dia de la semana en numero:");
 		int nday = (int) in.nextInt();
-		
 		if(!(nday < 1) && !(nday > 7)) {
 			String day = "";
 			switch(nday) {

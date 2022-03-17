@@ -1,8 +1,6 @@
 package NellyTasks;
-
 import java.util.Scanner;
 import java.io.IOException;
-
 /*
  * Alumnos:
  *	- Alvarez Manriquez Luis Fernando
@@ -18,18 +16,14 @@ import java.io.IOException;
  * c) Los camiones pagarán $27 por Km. más $12 por tonelada de carga
  *
 */
-
 public class Excercise20 {
 	public static void main(String[] args) throws IOException {
-		Scanner in = new Scanner(System.in);
-		
+		Scanner in = new Scanner(System.in);	
 		System.out.println("Ingresa vehiculo:");
 		char vehicle = (char) System.in.read();
 		System.in.read();
-		
 		System.out.println("Ingresar Kilometros:");
 		int km = (int) in.nextInt();
-		
 		double total;
 		double amount;
 		if(vehicle == 'b') {
@@ -47,7 +41,6 @@ public class Excercise20 {
 			total = (double) (km * amount) + (12 * tons);
 			System.out.println("El total es: $" + total);
 		} else System.err.println("Vehiculo no valido");
-		
 		in.close();
 	}
 }

@@ -1,7 +1,5 @@
 package NellyTasks;
-
 import java.util.Scanner;
-
 /*
  * Alumno:
  * - Alvarez Manriquez Luis Fernando
@@ -14,14 +12,11 @@ import java.util.Scanner;
  * Un número es palíndromo sies igual al revés  y como se dio originalmente. 
  * Por ejemplo: 565 es palíndromo, 449 no lo es.
  */
-
 public class Excercise11 {
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		
+		Scanner in = new Scanner(System.in);	
 		print("INGRESA VALOR DE 3 CIFRAS:");
 		int x = in.nextInt();
-		
 		int length = String.valueOf(x).length();
 		if(length == 3) {
 			/* 

@@ -24,17 +24,18 @@ public class Excercise11 {
 		
 		int length = String.valueOf(x).length();
 		if(length == 3) {
+			/* 
 			int inv = 0, dig = x;
 			do {
 				int ud = (int) dig % 10;
 				inv = (int) ((inv * 10) + ud);
 				dig /= 10;
-			} while(dig != 0);
-			
-			if(inv == x) print("ES PALINDROMO");
+			} while(dig != 0); */
+			int ud = (int) x % 10;
+			int fd = (int) x / 100;
+			if(ud == fd) print("ES PALINDROMO");
 			else print("NO ES PALINDROMO");
 		} else print("EL NUMERO DEBE SER DE 3 CIFRAS");
-		
 		in.close();
 	}
 	

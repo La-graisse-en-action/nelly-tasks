@@ -31,9 +31,8 @@ public class ActFour {
 			x /= (int) 10;
 		}
 		
-		if(o == 0) {
-			Print.ln("El valor parece binario");
-		} else {
+		if(o == 0) Print.ln("El valor parece binario");
+		else {
 			Print.ln("Numeros binarios: " + b);
 			Print.ln("Otro tipo de numeros: " + o);			
 		}

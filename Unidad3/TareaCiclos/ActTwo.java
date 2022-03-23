@@ -30,17 +30,17 @@ public class ActTwo {
 		if(m > n) {
 			do {
 				x += m;
-				Print.println(x);
+				Print.ln(x);
 				i++;
 			} while(i < n);
 		} else {
 			do {
 				x += n;
-				Print.println(x);
+				Print.ln(x);
 				i++;
 			} while(i < m);
 		}
-		Print.println("La multiplicacion es: " + x);
+		Print.ln("La multiplicacion es: " + x);
 		in.close();
 	}
 }

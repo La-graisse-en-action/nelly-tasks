@@ -1,4 +1,4 @@
-package NellyTasks;
+package Unidad3.PrimerosProblemas;
 import java.util.Scanner;
 /*
  * Alumno:

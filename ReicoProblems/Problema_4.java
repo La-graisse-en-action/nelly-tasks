@@ -1,4 +1,4 @@
-package solutions;
+package ReicoProblems;
 
 import java.util.Scanner;
 

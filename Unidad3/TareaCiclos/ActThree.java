@@ -19,13 +19,19 @@ public class ActThree {
 		Scanner in = new Scanner(System.in);
 		
 		Print.print("Ingresa el numerador: ");
-		int n = in.nextInt();
+		double n = in.nextDouble();
 		
 		Print.print("Ingresa denominador: ");
-		int m = in.nextInt();
+		double m = in.nextDouble();
 		
 		if(m != 0) {
-			
+			int i;
+			for(i = 0; n >= m; i++) {
+				n -= m;
+				Print.ln((int) n);
+			}
+			Print.ln("El resultado es: " + ((int) i));
+			Print.ln("El resto es: " + n);
 		} else {
 			Print.error("No se puede dividir entre 0");
 		}

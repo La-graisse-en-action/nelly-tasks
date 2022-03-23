@@ -9,7 +9,7 @@ public class Print {
 		System.out.print(txt);
 	}
 	
-	public static <T> void err(T error) {
+	public static <T> void error(T error) {
 		System.err.println(error);
 	}
 }

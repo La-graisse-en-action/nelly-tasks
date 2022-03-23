@@ -27,7 +27,7 @@ public class ActThree {
 		if(m != 0) {
 			
 		} else {
-			Print.ln("No se puede dividir entre 0");
+			Print.error("No se puede dividir entre 0");
 		}
 		
 		in.close();

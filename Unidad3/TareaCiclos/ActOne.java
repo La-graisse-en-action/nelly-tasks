@@ -8,7 +8,10 @@ import java.util.Scanner;
  * - 
  * - 
  * 
- * 1.
+ * 1. Haz un algoritmo que pida Números y después de ellos muestre cuál fue el más grande, 
+ * cuál el más pequeño y el promedio de todos. 
+ * Los ceros introducidos se ignoran (ni siquiera forman parte del promedio). 
+ * N es dado por el usuario, así como cada número.
  * 
  */
 

@@ -1,4 +1,4 @@
-package Unidad3;
+package Unidad3.TareaCiclos;
 
 import java.util.Scanner;
 

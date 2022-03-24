@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 /** 
  * Alumnos:
- * @author mrluisfer
+ * @author - Alvarez Manriquez Luis Fernando
+ * @author - Jesus Salvador Mora González
+ * @author - Irma Estrella Rivera Durán
  *
  * 5. Solicite un valor (suponga que el valor solo tendrá ceros y unos). 
  * A partir de la última cifra, toma cada una y multiplícala por una potencia de 2 

@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 /**
  * Alumnos:
- * - Alvarez Manriquez Luis Fernando
- * -
- * -
+ * @author - Alvarez Manriquez Luis Fernando
+ * @author - Jesus Salvador Mora González
+ * @author - Irma Estrella Rivera Durán
  * 
  * 4. Solicita un valor entero. Si el valor contiene solo ceros y unos, muestre el mensaje "El valor parece binario", 
  * de lo contrario, muestre cuántos ceros y unos tenía y cuántos números diferentes de ceros y unos tenía. 
@@ -30,13 +30,11 @@ public class ActFour {
 			else o++;
 			x /= (int) 10;
 		}
-		
 		if(o == 0) Print.ln("El valor parece binario");
 		else {
 			Print.ln("Numeros binarios: " + b);
 			Print.ln("Otro tipo de numeros: " + o);			
 		}
-		
 		in.close();
 	}
 }

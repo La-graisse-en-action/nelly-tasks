@@ -4,9 +4,10 @@ import java.util.Scanner;
 public class EstrellaAct {
 	public static void main(String[] args) {
 		Scanner leer = new Scanner(System.in);
-		double potencia = 0 ,suma = 0, mod;
 	    System.out.print("Ingrese su valor binario (solo ceros (0) y unos(1): ");
 	    int valor= leer.nextInt();
+
+	    double potencia = 0 ,suma = 0, mod;
 	    while(valor > 0){
 	    	mod = valor % 10;
 	        mod *= 2;

@@ -23,9 +23,7 @@ public class ActFour {
 		int ud = 0;
 		while(x > 0) {
 			ud = x % 10;
-			// Print.ln("Ultimo digito " + ud);
 			n = (int) ((n / 10) - ((n % 10) / 10));
-			// Print.ln("Valor de n " + n);
 			if(ud == 0 || ud == 1) b++;
 			else o++;
 			x /= (int) 10;

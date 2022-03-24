@@ -17,7 +17,6 @@ import java.util.Scanner;
 public class ActFive {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		
 		Print.print("Ingresa una cantidad en Binario: ");
 		int n = in.nextInt();
 		int ud = 0;
@@ -25,13 +24,9 @@ public class ActFive {
 		for(int x = n, i =  0; x > 0; x /= (int) 10, i++) {
 			ud = x % 10;
 			n = (int) (n / 10) - ((n % 10) / 10);
-			z = (int) (ud * (int) Math.pow(2, i));
-
-			Print.ln(x);
-			Print.print(ud + "x2^" + i + ": ");
-			Print.ln(z += z);
+			z += (int) (ud * (int) Math.pow(2, i));
 		}
-		
+		Print.ln("El valor es: " + z);
 		in.close();
 	}
 }

@@ -28,10 +28,10 @@ public class ActFour {
 		Scanner in = new Scanner(System.in);
 
 		Print.print("Ingrese una cadena: ");
-		String cad = in.next().toLowerCase();
+		String cad = in.next().toLowerCase().trim();
 
 		Print.print("Ingrese otra cadena: ");
-		String cad2 = in.next().toLowerCase();
+		String cad2 = in.next().toLowerCase().trim();
 
 		while (cad2.length() != cad.length()) {
 			String val;
@@ -47,7 +47,7 @@ public class ActFour {
 			Print.print("Ingrese otra cadena: ");
 			cad2 = in.next().toLowerCase();
 		}
-		Print.ln("FIN");
+		Print.error("FIN");
 		in.close();
 	}
 }

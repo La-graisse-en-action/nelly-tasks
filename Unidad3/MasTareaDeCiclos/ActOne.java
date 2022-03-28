@@ -6,8 +6,7 @@ import Unidad3.TareaCiclos.Print;
 /**
  * @author Alvarez Manriquez Luis Fernando
  * @author Jesus Salvador Mora González
- * @author Irma Estrella Rivera Durán 1. 
- * 		   Ingrese una cadena e imprima la
+ * @author Irma Estrella Rivera Durán 1. Ingrese una cadena e imprima la
  *         subcadena que resulta de la tercera vocal de la cadena, o muestre el
  *         mensaje "La cadena no tiene 3 vocales". Ejemplos: Introducir cadena:
  *         murcielago La subcadena de la tercera vocal: elago Introducir cadena:
@@ -24,16 +23,19 @@ public class ActOne {
 		String z = "";
 		char c = 0;
 		int cont = 0, i;
+		
 		for (i = 0; i < cad.length() && cont < 3; i++) {
 			z = cad.substring(i);
 			c = z.charAt(0);
 			if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
 				cont++;
 		}
+
 		if (cont == 3)
 			Print.ln(z);
 		else
 			Print.error("La palabra " + cad + " no tiene 3 vocales");
+
 		in.close();
 	}
 }

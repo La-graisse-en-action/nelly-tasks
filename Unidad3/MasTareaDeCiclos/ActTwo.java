@@ -3,7 +3,6 @@ package Unidad3.MasTareaDeCiclos;
 import java.util.Scanner;
 
 public class ActTwo {
-	// By Estrella Rivera
 	public static void main(String[] args) {
 		Scanner leer = new Scanner(System.in);
 		String cad, cad2 = "";

@@ -11,7 +11,7 @@ import Unidad3.TareaCiclos.Print;
  *         mensaje "La cadena no tiene 3 vocales". Ejemplos: Introducir cadena:
  *         murcielago La subcadena de la tercera vocal: elago Introducir cadena:
  *         corazón La subcadena de la tercera voz: on Introducir cadena:oso La
- *         cadena no tiene 3 vocales
+ *         cadena no tiene 3 vocales.
  */
 public class ActOne {
 	public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class ActOne {
 		String z = "";
 		char c = 0;
 		int cont = 0, i;
-		
+
 		for (i = 0; i < cad.length() && cont < 3; i++) {
 			z = cad.substring(i);
 			c = z.charAt(0);

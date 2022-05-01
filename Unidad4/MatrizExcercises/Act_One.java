@@ -1,5 +1,10 @@
 package Unidad4.MatrizExcercises;
 
+import java.util.Random;
+
+import Utils.Matriz;
+import Utils.Print;
+
 /**
  * 
  * @author Alvarez Manriquez Luis Fernando.
@@ -14,6 +19,25 @@ package Unidad4.MatrizExcercises;
  */
 public class Act_One {
 	public static void main(String[] args) {
+		Random random = new Random();
 
+		int r = random.nextInt(8) + 2;
+		int c = random.nextInt(5) + 2;
+
+		int matriz[][] = new int[r][c];
+		Print.ln("Matrix created with " + matriz.length + " rows and " + matriz[0].length + " columns");
+
+		for (int ren = 0; ren < matriz.length; ren++) {
+			for (int col = 0; col < matriz[0].length; col++) {
+				int val = random.nextInt(100);
+				if (ren % 2 == 0 && val % 2 == 0) {
+					matriz[ren][col] = val;
+				} else if (ren % 2 == 1 && val % 2 == 1) {
+					matriz[ren][col] = val;
+				}
+			}
+		}
+
+		Matriz.printIntMtr(matriz);
 	}
 }

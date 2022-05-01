@@ -1,6 +1,8 @@
 package Unidad3.TareaCiclos;
 import java.util.Scanner;
 
+import Utils.Print;
+
 public class EstrellaAct {
 	public static void main(String[] args) {
 		Scanner leer = new Scanner(System.in);

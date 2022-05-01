@@ -2,6 +2,8 @@ package Unidad3.TareaCiclos;
 
 import java.util.Scanner;
 
+import Utils.Print;
+
 /** 
  * Alumnos:
  * @author - Alvarez Manriquez Luis Fernando

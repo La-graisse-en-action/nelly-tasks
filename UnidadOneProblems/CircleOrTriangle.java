@@ -4,39 +4,39 @@ import java.util.Scanner;
 import Utils.Print;
 
 public class CircleOrTriangle {
-	
+
 	public static void main(String[] args) {
-		Print print = new Print();
+
 		Scanner in = new Scanner(System.in);
-	
-		print.pr("Ingresa tu figura (circulo, triangulo):", null);
+
+		Print.print("Ingresa tu figura (circulo, triangulo):");
 		String figure = in.nextLine();
-	
+
 		String circle = "circulo";
 		String triangle = "triangulo";
-	
-		if(figure.equals(circle)) {
-			print.pr("Ingresa el radio:", null);
+
+		if (figure.equals(circle)) {
+			Print.print("Ingresa el radio:");
 			int radius = in.nextInt();
-			
+
 			if (radius > 0) {
 				double area = Math.PI * (radius * radius);
-				print.pr("El area de tu circulo es: " + area, null);
+				Print.print("El area de tu circulo es: " + area);
 			} else {
-				print.pr("El vaor del radio debe ser mayor a 0", null);
+				Print.print("El vaor del radio debe ser mayor a 0");
 			}
-		} else if(figure.equals(triangle)) {
-			print.pr("Ingresa la base", null);
+		} else if (figure.equals(triangle)) {
+			Print.print("Ingresa la base");
 			double b = in.nextInt();
-			print.pr("Ingresa la altura", null);
+			Print.print("Ingresa la altura");
 			double a = in.nextInt();
-			
+
 			double area = (b * a) / 2;
-			print.pr("El valor del area de tu triangulo es: " + area, null);
+			Print.print("El valor del area de tu triangulo es: " + area);
 		} else {
-			print.pr("Figura no valida", null);
+			Print.print("Figura no valida");
 		}
-		
+
 		in.close();
 	}
 }

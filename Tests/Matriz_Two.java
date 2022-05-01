@@ -3,7 +3,7 @@ package Tests;
 import java.util.Random;
 import java.util.Scanner;
 
-import Unidad3.TareaCiclos.Print;
+import Utils.Print;
 
 public class Matriz_Two {
 	public static void main(String[] args) {

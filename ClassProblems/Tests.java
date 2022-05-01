@@ -1,7 +1,8 @@
 package ClassProblems;
 
-import Unidad3.TareaCiclos.Print;
 import java.util.Scanner;
+
+import Utils.Print;
 
 public class Tests {
 	public static void main(String[] args) {

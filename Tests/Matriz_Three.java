@@ -1,6 +1,6 @@
 package Tests;
 
-import Unidad3.TareaCiclos.Print;
+import Utils.Print;
 
 public class Matriz_Three {
 	public static void main(String[] args) {

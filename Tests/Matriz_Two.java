@@ -12,9 +12,7 @@ public class Matriz_Two {
 		String cad = "";
 
 		int ren, col, index = 0;
-		/*
-		 * int num = 0; num = r.nextInt(6) + 2;
-		 */
+
 		char mat[][] = new char[r.nextInt(2, 8)][r.nextInt(2, 8)];
 		Print.ln("Se creo una cadena de " + mat.length + " por " + mat[0].length);
 		Print.ln("Ingresar cadena:");

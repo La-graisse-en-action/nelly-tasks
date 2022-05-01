@@ -1,5 +1,10 @@
 package Unidad4.MatrizExcercises;
 
+import java.util.Random;
+
+import Utils.Matriz;
+import Utils.Print;
+
 /**
  * 
  * @author Alvarez Manriquez Luis Fernando.
@@ -17,5 +22,29 @@ package Unidad4.MatrizExcercises;
 public class Act_Two {
 	public static void main(String[] args) {
 
+		Random random = new Random();
+		char arr[] = { 'E', 'S', 'T', 'R', 'E', 'L', 'L', 'A' };
+		int index = 0;
+
+		int rows = random.nextInt(9) + 2;
+		int cols = random.nextInt(9) + 2;
+		char mtr[][] = new char[rows][cols];
+
+		Print.ln("Array unidimensional:");
+		for (int i = 0; i < arr.length; i++)
+			Print.print("'" + arr[i] + "', ");
+		Print.ln("\n");
+
+		Print.ln("Matrix created with " + mtr.length + " rows and " + mtr[0].length + " columns");
+		for (int ren = mtr.length; ren > 0; ren--) {
+			for (int col = 0; col < mtr[0].length;) {
+				/*
+				 * mtr[ren - 1][col] = arr[index]; if(index == mtr.length) { index = 0; }
+				 * index++;
+				 */
+			}
+		}
+
+		// Matriz.printCharMtr(mtr);
 	}
 }

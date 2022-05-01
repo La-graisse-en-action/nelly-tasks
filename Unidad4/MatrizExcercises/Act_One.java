@@ -23,7 +23,6 @@ public class Act_One {
 
 		int r = random.nextInt(8) + 2;
 		int c = random.nextInt(5) + 2;
-
 		int matriz[][] = new int[r][c];
 		Print.ln("Matrix created with " + matriz.length + " rows and " + matriz[0].length + " columns");
 

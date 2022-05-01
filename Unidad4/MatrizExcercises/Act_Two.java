@@ -37,14 +37,13 @@ public class Act_Two {
 
 		Print.ln("Matrix created with " + mtr.length + " rows and " + mtr[0].length + " columns");
 		for (int ren = mtr.length; ren > 0; ren--) {
-			for (int col = 0; col < mtr[0].length;) {
-				/*
-				 * mtr[ren - 1][col] = arr[index]; if(index == mtr.length) { index = 0; }
-				 * index++;
-				 */
+			mtr[ren - 1][1] = arr[index];
+			index++;
+			if (index == mtr.length) {
+				index = 0;
 			}
 		}
 
-		// Matriz.printCharMtr(mtr);
+		Matriz.printCharMtr(mtr);
 	}
 }

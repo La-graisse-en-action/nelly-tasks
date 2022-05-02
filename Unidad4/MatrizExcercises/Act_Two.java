@@ -8,7 +8,7 @@ import Utils.Print;
 /**
  * 
  * @author Alvarez Manriquez Luis Fernando.
- * 
+ *         <p>
  *         Crear e inicializar al mism otiempo de la creación, un arreglo
  *         unidimensional de caracteres, con los caracteres de su preferencia,
  *         de la longitud que usted decida. Crear una matriz de caracteres de R

@@ -8,7 +8,7 @@ public class Matriz {
 		Print.ln("");
 
 		for (int ren = 0; ren < mtr.length; ren++) {
-			Print.print(ren + "- " + "\t");
+			Print.print(ren + ". " + "\t");
 			for (int col = 0; col < mtr[0].length; col++) {
 				Print.print(mtr[ren][col] + "\t");
 			}

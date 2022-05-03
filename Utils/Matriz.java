@@ -6,7 +6,6 @@ public class Matriz {
 			Print.print("\t" + i + ". ");
 		}
 		Print.ln("");
-
 		for (int ren = 0; ren < mtr.length; ren++) {
 			Print.print(ren + ". " + "\t");
 			for (int col = 0; col < mtr[0].length; col++) {
@@ -21,7 +20,6 @@ public class Matriz {
 			Print.print("\t" + i + ". ");
 		}
 		Print.ln("");
-
 		for (int ren = 0; ren < mtr.length; ren++) {
 			Print.print(ren + "- " + "\t");
 			for (int col = 0; col < mtr[0].length; col++) {

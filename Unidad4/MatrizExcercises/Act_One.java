@@ -1,26 +1,21 @@
 package Unidad4.MatrizExcercises;
 
 import java.util.Random;
-
 import Utils.Matriz;
 import Utils.Print;
 
 /**
- * 
- * @author Alvarez Manriquez Luis Fernando.
- *         <p>
- *         Cree un programa que almacene valores enteros en una matriz de R x C.
- *         R es es un valor entero aleatorio entre 2 y 9, C es un valor entero
- *         aleatorio entre 2 y 6. Almacene números enteros aleatorios en cada
- *         celda de la matriz en el rango de 0 a 99, cuidando que en las filas
- *         pares de la matriz (0,2,4, etc) solo haya valores pares y que en las
- *         impares (1,3, etc) solo haya valores impares. Muestra la matriz fila
- *         por fila.
+ * @author Alvarez Manriquez Luis Fernando. Cree un programa que almacene
+ *         valores enteros en una matriz de R x C. R es es un valor entero
+ *         aleatorio entre 2 y 9, C es un valor entero aleatorio entre 2 y 6.
+ *         Almacene números enteros aleatorios en cada celda de la matriz en el
+ *         rango de 0 a 99, cuidando que en las filas pares de la matriz (0,2,4,
+ *         etc) solo haya valores pares y que en las impares (1,3, etc) solo
+ *         haya valores impares. Muestra la matriz fila por fila.
  */
 public class Act_One {
 	public static void main(String[] args) {
 		Random random = new Random();
-
 		int r = random.nextInt(8) + 2;
 		int c = random.nextInt(5) + 2;
 		int matriz[][] = new int[r][c];
@@ -37,6 +32,17 @@ public class Act_One {
 			}
 		}
 
-		Matriz.printIntMtr(matriz);
+		for (int i = 0; i < matriz[0].length; i++) {
+			Print.print("\t" + i + ". ");
+		}
+		Print.ln("");
+
+		for (int ren = 0; ren < matriz.length; ren++) {
+			Print.print(ren + ". " + "\t");
+			for (int col = 0; col < matriz[0].length; col++) {
+				Print.print(matriz[ren][col] + "\t");
+			}
+			Print.print("\n");
+		}
 	}
 }

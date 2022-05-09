@@ -7,15 +7,15 @@ public class BlueOrRedBall {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
-		Print.print("Ingresa pelota seleccionada (azul o roja):", null);
+		Print.print("Ingresa pelota seleccionada (azul o roja):");
 		String ball = in.nextLine();
 		boolean hasValidBall = validBall(ball);
 
 		if (hasValidBall) {
-			Print.print("Ingresa total de compra:", null);
+			Print.print("Ingresa total de compra:");
 			double totalPurchase = in.nextInt();
 
-			Print.print("Ingresa la cantidad de articulos:", null);
+			Print.print("Ingresa la cantidad de articulos:");
 			int arts = in.nextInt();
 
 			double desc = 0;
@@ -28,12 +28,12 @@ public class BlueOrRedBall {
 			}
 
 			if (arts >= 4) {
-				Print.print("Tu total con el descuento es: " + totalPurchase * 0.95, null);
+				Print.print("Tu total con el descuento es: " + totalPurchase * 0.95);
 			} else {
-				Print.print("Para aplicar el descuento exra necesitas 4 articulos o mas, $" + totalPurchase, null);
+				Print.print("Para aplicar el descuento exra necesitas 4 articulos o mas, $" + totalPurchase);
 			}
 		} else {
-			Print.print("Ingresa una bola valida", null);
+			Print.print("Ingresa una bola valida");
 		}
 
 		in.close();

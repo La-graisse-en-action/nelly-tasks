@@ -5,8 +5,7 @@ import Utils.Print;
 public class TableMethods {
 	public static void main(String[] args) {
 		table(3, 7);
-		int v = vocals("SI");
-		Print.ln("Cantidad de vocales: " + v);
+		vocals("SI UNnasf dsadf sadf asdfasdqaADSFJHSDJFH");
 	}
 
 	private static void table(int init, int last) {
@@ -19,7 +18,7 @@ public class TableMethods {
 		}
 	}
 
-	private static int vocals(String cad) {
+	private static void vocals(String cad) {
 		int vocals = 0;
 		String newCad = cad.toLowerCase();
 
@@ -29,7 +28,7 @@ public class TableMethods {
 				vocals++;
 			}
 		}
+		Print.ln("Cantidad de vocales: " + vocals);
 
-		return vocals;
 	}
 }

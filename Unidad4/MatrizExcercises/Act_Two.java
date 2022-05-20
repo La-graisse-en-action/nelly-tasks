@@ -23,11 +23,13 @@ public class Act_Two {
 		int rows = random.nextInt(9) + 2;
 		int cols = random.nextInt(9) + 2;
 		char mtr[][] = new char[rows][cols];
+
 		Print.ln("Array unidimensional:");
 		for (int i = 0; i < arr.length; i++)
 			Print.print("'" + arr[i] + "', ");
 		Print.ln("\n");
 		Print.ln("Matrix created with " + mtr.length + " rows and " + mtr[0].length + " columns");
+
 		for (int col = 0; col < mtr[0].length; col++) {
 			for (int ren = mtr.length - 1; ren >= 0; ren--) {
 				mtr[ren][col] = arr[index];

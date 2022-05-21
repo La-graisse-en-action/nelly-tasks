@@ -5,100 +5,96 @@ import java.util.Scanner;
 
 public class ActOne {
 
-    private static int aVocals = 0, eVocals = 0, iVocals = 0, oVocals = 0, uVocals = 0;
-    private static char mtr[][] = new char[3][4];
+	private static int aVocals = 0, eVocals = 0, iVocals = 0, oVocals = 0, uVocals = 0;
+	private static char mtr[][] = new char[3][4];
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        // 1.
-        ingressVocal(mtr);
+		// 1.
+		ingressVocal(mtr);
 
-        // 2.
-        printMtr(mtr);
+		// 2.
+		printMtr(mtr);
 
-        // 3.
-        showVocals(mtr);
+		// 3.
+		showVocals(mtr);
 
-        // 4.
-        showUserRow(mtr);
+		// 4.
+		showUserRow(mtr);
 
-        // 5.
-        boolean hasAVocal = hasVocal(mtr);
-        println("La matriz tiene mas de 4 caracteres 'a'?: " + hasAVocal);
-    }
+		// 5.
+		boolean hasAVocal = hasVocal(mtr);
+		println("La matriz tiene mas de 4 caracteres 'a'?: " + hasAVocal);
+	}
 
-    private static void ingressVocal(char[][] charMtr) {
-        Random random = new Random();
-        char vocals[] = {'a', 'e', 'i', 'o', 'u'};
+	private static void ingressVocal(char[][] charMtr) {
+		Random random = new Random();
+		char vocals[] = { 'a', 'e', 'i', 'o', 'u' };
 
-        for (int ren = 0; ren < charMtr.length; ren++) {
-            for (int col = 0; col < charMtr[0].length; col++) {
-                int index = random.nextInt(vocals.length);
-                charMtr[ren][col] = vocals[index];
-            }
-        }
-    }
+		for (int ren = 0; ren < charMtr.length; ren++) {
+			for (int col = 0; col < charMtr[0].length; col++) {
+				int index = random.nextInt(vocals.length);
+				charMtr[ren][col] = vocals[index];
+			}
+		}
+	}
 
-    public static void printMtr(char[][] mtr) {
-        for (int i = 0; i < mtr[0].length; i++) {
-            print("\t" + i + ". ");
-        }
-        println("");
-        for (int ren = 0; ren < mtr.length; ren++) {
-            print(ren + "- " + "\t");
-            for (int col = 0; col < mtr[0].length; col++) {
-                print(mtr[ren][col] + "\t");
-            }
-            print("\n");
-        }
-        println("");
-    }
+	public static void printMtr(char[][] mtr) {
+		for (int i = 0; i < mtr[0].length; i++) {
+			print("\t" + i + ". ");
+		}
+		println("");
+		for (int ren = 0; ren < mtr.length; ren++) {
+			print(ren + "- " + "\t");
+			for (int col = 0; col < mtr[0].length; col++) {
+				print(mtr[ren][col] + "\t");
+			}
+			print("\n");
+		}
+		println("");
+	}
 
-    private static <T> void print(T txt) {
-        System.out.print(txt);
-    }
+	private static <T> void print(T txt) {
+		System.out.print(txt);
+	}
 
-    private static <T> void println(T txt) {
-        System.out.println(txt);
-    }
+	private static <T> void println(T txt) {
+		System.out.println(txt);
+	}
 
-    public static void showVocals(char[][] mtr) {
+	public static void showVocals(char[][] mtr) {
 
-        for (int ren = 0; ren < mtr.length; ren++) {
-            for (int col = 0; col < mtr[0].length; col++) {
-                switch (mtr[ren][col]) {
-                    case 'a' ->
-                        aVocals++;
-                    case 'e' ->
-                        eVocals++;
-                    case 'i' ->
-                        iVocals++;
-                    case 'o' ->
-                        oVocals++;
-                    case 'u' ->
-                        uVocals++;
-                    default ->
-                        col++;
-                }
-            }
-        }
-    }
+		for (int ren = 0; ren < mtr.length; ren++) {
+			for (int col = 0; col < mtr[0].length; col++) {
+				switch (mtr[ren][col]) {
+				case 'a':
+					aVocals++;
+					break;
+				case 'e':
+					eVocals++;
+					break;
+				case 'i':
+					iVocals++;
+					break;
+				case 'o':
+					oVocals++;
+					break;
+				case 'u':
+					uVocals++;
+					break;
+				default:
+					col++;
+					break;
+					;
+				}
+			}
+		}
 
-    println(
-
-    "Vocal a: " + aVocals + " veces");
-    println(
-
-    "Vocal e: " + eVocals + " veces");
-    println(
-
-    "Vocal i: " + iVocals + " veces");
-    println(
-
-    "Vocal o: " + oVocals + " veces");
-    println(
-
-"Vocal u: " + uVocals + " veces");
+		println("Vocal a: " + aVocals + " veces");
+		println("Vocal e: " + eVocals + " veces");
+		println("Vocal i: " + iVocals + " veces");
+		println("Vocal o: " + oVocals + " veces");
+		println("Vocal u: " + uVocals + " veces");
 	}
 
 	public static void showUserRow(char[][] mtr) {

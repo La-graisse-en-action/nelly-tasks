@@ -10,6 +10,7 @@ public class ExpendMachine {
 	static Scanner scan = new Scanner(System.in);
 	static boolean process = true;
 	static List<String> history = new ArrayList<String>();
+	static int expendMachineTotal = 0;
 
 	public static void main(String[] args) {
 		do {
@@ -31,7 +32,6 @@ public class ExpendMachine {
 	public static void menu() {
 		print("Producto a comprar: ");
 		String product = scan.next();
-
 		if (product.equals("lapiz") || product.equals("borrador") || product.equals("cuaderno")) {
 			print("Cantidad a comprar: ");
 			int cant = scan.nextInt();
@@ -57,6 +57,7 @@ public class ExpendMachine {
 		int[] arr = new int[2];
 		arr[0] = total;
 		arr[1] = payment;
+		expendMachineTotal += total;
 		return arr;
 	}
 
@@ -114,10 +115,23 @@ public class ExpendMachine {
 			ln("Tu cambio es de $" + change + " Puedes recoger tus productos");
 			history.add("Compra Cuaderno: " + "-" + cant);
 		}
+
 	}
 
 	public static void printHistory() {
 		ln("");
 		history.forEach((mov) -> ln(mov));
+		ln("Total de ventas es: $" + expendMachineTotal);
 	}
+
+	/*
+	 * private static void commonBuy(int cant, int productPrice, String productName,
+	 * int productCant) { boolean hasCant = validCant(productCant, cant,
+	 * productName); if (hasCant) { int[] paid = getTotal(cant, productPrice); if
+	 * (paid[1] < paid[0]) {
+	 * ln("Debes pagar la cantidad completa para recibir tu producto!"); return; }
+	 * productCant -= cant; int change = paid[1] - paid[0]; ln("Tu cambio es de $" +
+	 * change + " Puedes recoger tus productos"); history.add("Compra Cuaderno: " +
+	 * "-" + cant); } }
+	 */
 }

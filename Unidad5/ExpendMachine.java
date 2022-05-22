@@ -119,7 +119,7 @@ public class ExpendMachine {
 	}
 
 	public static void printHistory() {
-		ln("");
+		ln("Ultimos movimientos:");
 		history.forEach((mov) -> ln(mov));
 		ln("Total de ventas es: $" + expendMachineTotal);
 	}

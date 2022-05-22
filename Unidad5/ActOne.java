@@ -85,7 +85,6 @@ public class ActOne {
 				default:
 					col++;
 					break;
-					;
 				}
 			}
 		}

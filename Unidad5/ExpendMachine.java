@@ -25,13 +25,13 @@ public class ExpendMachine {
 		System.out.print(txt);
 	}
 
-	private static <T> void ln(T txt) {
-		System.out.println(txt);
+	private static <T> void ln(T cualquiercosa) {
+		System.out.println(cualquiercosa);
 	}
 
 	public static void menu() {
 		print("Producto a comprar: ");
-		String product = scan.next();
+		String product = scan.next().toLowerCase();
 		if (product.equals("lapiz") || product.equals("borrador") || product.equals("cuaderno")) {
 			print("Cantidad a comprar: ");
 			int cant = scan.nextInt();
@@ -121,17 +121,7 @@ public class ExpendMachine {
 	public static void printHistory() {
 		ln("Ultimos movimientos:");
 		history.forEach((mov) -> ln(mov));
+		// ForEach es como el for normal
 		ln("Total de ventas es: $" + expendMachineTotal);
 	}
-
-	/*
-	 * private static void commonBuy(int cant, int productPrice, String productName,
-	 * int productCant) { boolean hasCant = validCant(productCant, cant,
-	 * productName); if (hasCant) { int[] paid = getTotal(cant, productPrice); if
-	 * (paid[1] < paid[0]) {
-	 * ln("Debes pagar la cantidad completa para recibir tu producto!"); return; }
-	 * productCant -= cant; int change = paid[1] - paid[0]; ln("Tu cambio es de $" +
-	 * change + " Puedes recoger tus productos"); history.add("Compra Cuaderno: " +
-	 * "-" + cant); } }
-	 */
 }
